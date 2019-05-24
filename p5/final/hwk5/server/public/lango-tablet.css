@@ -1,0 +1,26 @@
+@media only screen and (min-width: 501px) and (max-width: 780px) {
+  /*for tablet view*/
+
+  header {
+    margin-left: 2%;
+    margin-right: 22vw;
+    margin-bottom: 5vh;
+  }
+
+  button#top-left-button {
+    width: 7em;
+    border-radius: 15px;
+  }
+
+  div#cards-container {
+    margin: 0% 2%;
+  }
+
+  textarea.text-card {
+    width: 44.5vw;
+  }
+
+  div#bottom-right-button-container {
+    margin-right: 2%;
+  }
+}

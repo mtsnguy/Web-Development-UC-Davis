@@ -1,0 +1,123 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+div#root {
+  font-family: helvetica;
+  height: 100%;
+  width: 100%;
+}
+
+div#create-cards-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex: 1 0 auto;
+  padding-top: 0.75%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 8 0 auto;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(97,107,153);
+  flex: 1 0 auto;
+}
+
+button {
+  color: white;
+  text-align: center;
+  outline: none;
+  flex: 1 1;
+  font-size: 1.5625em;
+}
+
+div#top-left-button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  padding-top: 1%;
+}
+
+button#top-left-button {
+  background-color: rgb(97,107,153);
+  height: 53%;
+}
+
+div#title-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+h1#title {
+  color: rgb(97,107,153);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 4.375em;
+}
+
+div#cards-container {
+  display: flex;
+  flex: 7 0 auto;
+  justify-content: space-between;
+  align-content: center;
+}
+
+div.text-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+}
+
+textarea.text-card {
+  width: 98.5%;
+  text-align: center;
+  outline: none;
+  font-size: 1.875em;
+  border-style: none;
+  resize: none;
+}
+
+div#bottom-right-button-container {
+  align-self: flex-end;
+  padding: 3.5vh 0vh;
+  height: 3.125em;
+}
+
+button#bottom-right-button {
+  display: block;
+  background-color: rgb(116,197,169);
+  border-radius: 10px;
+  width: 4.7em;
+  height: 100%;
+}
+
+div#user-name-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+p#user-name {
+  font-size: 1.5625em;
+  color: white;
+}

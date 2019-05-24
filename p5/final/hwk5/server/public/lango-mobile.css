@@ -1,0 +1,58 @@
+@media only screen and (max-width: 500px) {
+  /*for mobile view*/
+
+  header {
+    margin-left: 1vw;
+    margin-right: 15vw;
+  }
+
+  footer {
+    height: 2em;
+  }
+
+  h1#title {
+    font-size: 4em;
+  }
+
+  div#top-left-button-container {
+    height: 75%;
+    width: 50%;
+    padding-top: 0%;
+  }
+
+  button#top-left-button {
+    border-radius: 8px;
+    height: 100%;
+    font-size: 0.875em;
+  }
+
+  div#cards-container {
+    flex-direction: column;
+    margin: 7%;
+  }
+
+  div.text-card-container {
+    width: 99%;
+    height: 40vh;
+  }
+
+  textarea.text-card {
+    font-size: 1.25em;
+  }
+
+  #translation-card-container {
+   	margin-top: 5vh;
+  }
+
+  div#bottom-right-button-container {
+    margin-right: 7%;
+  }
+
+  button#bottom-right-button {
+    font-size: 1.0625em;
+  }
+
+  p#user-name {
+    font-size: 1.0625em;
+  }
+}

@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<link href = "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:300" rel="stylesheet">
+	<link href = "https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500" rel="stylesheet">
+</head>
+
+<body>
+
+<header id = "header">
+	<div class="sec1">
+		<h1>Local Weather <span id = "mobbr"><br/></span>Six Hour Forecast</h1>
+		<h2>Northern California with doppler radar</h2>
+		<form>
+			<h3>Forecast for</h3>
+			<div class = "sub">
+				<input class='searchbar' id='search' type='text' value ='Davis,CA' />
+	      		<input class='subbtn' id='button' onclick="updateLocation()" type="button" value=' submit ' />
+			</div>
+		</form>
+		<section id="current">
+		</section>
+	</div>
+	<section id="tabview">
+		<section id="tabcurrent">
+		</section>
+		<div class = "sec2">
+			<img class = "imga1" src="http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg" alt="Doppler Map"/>
+			<img class = "imga3" id = "imga3" src="https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif" alt="Doppler Radar"/>
+			<img class = "imga2" src="http://radar.weather.gov/ridge/Overlays/Cities/Short/DAX_City_Short.gif" alt="Doppler Cities"/>
+		</div>
+	</section>
+	<button id = "downbutton"> <img src="../assets/upArrow.svg"> </button>
+</header>
+<main>
+	<button id = "upbutton"> <img src="../assets/downArrow.svg"> </button>
+	<div class='forecast' id='forecast'></div>
+</main>
+<!-- execute the Javascript for this page -->
+<script src="makeRequest.js"></script>
+<script src="slide.js"></script>
+</body>
+</html>
