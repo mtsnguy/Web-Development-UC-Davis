@@ -1,0 +1,253 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+div#root {
+  font-family: helvetica;
+  height: 100%;
+  width: 100%;
+}
+
+div#create-cards-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+div#review-cards-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex: 1 0 auto;
+  padding-top: 0.75%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 8 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(97,107,153);
+  flex: 1 0 auto;
+}
+
+button {
+  color: white;
+  text-align: center;
+  outline: none;
+  flex: 1 1;
+  font-size: 1.5625em;
+}
+
+div#top-left-button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  padding-top: 1%;
+}
+
+button#top-left-button {
+  background-color: rgb(97,107,153);
+  height: 53%;
+}
+
+div#title-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+h1#title {
+  color: rgb(97,107,153);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 4.375em;
+}
+
+div#cards-container {
+  display: flex;
+  flex: 7 0 auto;
+  justify-content: space-between;
+  align-content: center;
+}
+
+div.text-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+}
+
+textarea.text-card {
+  width: 98.5%;
+  text-align: center;
+  outline: none;
+  font-size: 1.875em;
+  border-style: none;
+  resize: none;
+}
+
+div#bottom-right-button-container {
+  align-self: flex-end;
+  padding: 3.5vh 0vh;
+  height: 3.125em;
+}
+
+div#rcards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 80%;
+}
+
+/* START OF FLIP CARD */
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border: 1px solid black;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card-inner {
+  transform: rotateY(0deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+div.top-of-card-container {
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.flip-image-container {
+  width: 2.75em;
+}
+
+input#front-flip-image.more-content {
+  display: inline;
+  border: 0px;
+}
+
+input#front-flip-image.less-content {
+  display: none
+}
+
+input.flip-card {
+  border: 0px;
+  width:100%;
+}
+
+div.card-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+p.card-text {
+  font-size: 1.875em;
+}
+
+div#correct-box.display {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 3px solid rgb(110,178,52);
+  background-color: rgb(215,254,180);
+  color: rgb(87,169,33);
+  margin: 0% 30%;
+  height: 40%;
+  padding-bottom: 0%;
+  width: 40%;
+}
+
+/* END OF FLIP CARD */
+
+div#entry-card-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+}
+
+textarea#entry-card {
+  width: 100%;
+}
+
+button#bottom-right-button {
+  display: block;
+  background-color: rgb(116,197,169);
+  border-radius: 10px;
+  width: 4.7em;
+  height: 100%;
+}
+
+div#user-name-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+p#user-name {
+  font-size: 1.5625em;
+  color: white;
+}

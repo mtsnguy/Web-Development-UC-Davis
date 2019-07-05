@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  font-family: Helvetica;
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+}
+
+div#welcome-side-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient( #606B9B, #B191D4);
+}
+
+div#welcome-side-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+div#welcome-text-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+div#bottom-text-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 3em;
+}
+
+p#bottom-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #70C7A9;
+}
+
+div#login-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#login-button-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #70C7A9;
+  width: 19em;
+}
+
+div#google-logo-container {
+  padding: 5px 0px;
+  width: 3em;
+}
+
+div#login-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0em 1em;
+}
+
+a#login-text {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5625em;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}

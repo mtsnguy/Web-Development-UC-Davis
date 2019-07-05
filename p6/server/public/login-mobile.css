@@ -1,0 +1,24 @@
+@media only screen and (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+
+  div#welcome-side-container {
+    height: 70%;
+    width: 100%;
+    box-shadow: 0em 1em 3em rgb(133,126,134)
+  }
+
+  h1 {
+    font-size: 3.3em;
+  }
+
+  p#bottom-text {
+    font-size: 1.55em;
+  }
+
+  div#login-side-container {
+    width: 100%;
+    height: 30%;
+  }
+}

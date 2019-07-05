@@ -1,0 +1,37 @@
+@media only screen and (min-width: 781px) {
+
+  header {
+    margin-left: 5vw;
+    margin-right: 15vw;
+    margin-bottom: 5vh;
+  }
+
+  button#top-left-button {
+    width: 7em;
+    border-radius: 15px;
+  }
+
+  div#cards-container {
+    margin: 0% 18%;
+  }
+
+  div#rcards-container {
+    margin: 0% 18%;
+  }
+
+  div.text-card-container {
+    width: 30vw;
+  }
+
+  textarea.text-card {
+    overflow: hidden;
+  }
+
+  div#bottom-right-button-container {
+    margin-right: 18%;
+  }
+
+  footer {
+    width: 100%
+  }
+}
